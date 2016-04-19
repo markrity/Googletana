@@ -1,0 +1,20 @@
+{
+    "name":"Googletana",
+    "version":"0.1",
+    "manifest_version":2,
+    "description":"Bing to Google",
+    "browser_action": {
+      "default_icon":"googletana.png",
+      "default_popup":"mypopup.html"
+    },
+    "icons" : {
+      "128":"googletana.png"
+    },
+    "content_scripts": [
+      {
+        "matches":["http://*/*","https://*/*"],
+        "js":["myscript.js"]
+      }
+    ]
+
+}
