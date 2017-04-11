@@ -1,0 +1,21 @@
+{
+    "name":"Googletana - Transfer Bing searches to Google",
+	"short_name":"Googletana",
+    "version":"0.2",
+    "manifest_version":2,
+    "description":"Bing to Google",
+    "browser_action": {
+      "default_icon":"googletana.png",
+      "default_popup":"googletanaPopUp.html"
+    },
+    "icons" : {
+      "128":"googletana.png"
+    },
+    "content_scripts": [
+      {
+        "matches":["http://*/*","https://*/*"],
+        "js":["googletanaScript.js"]
+      }
+    ]
+
+}
